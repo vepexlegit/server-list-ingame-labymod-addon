@@ -46,17 +46,17 @@ public class ServerListInGameModule extends Module {
 
     @SubscribeEvent
     public void onGuiScreenInit(GuiScreenEvent.InitGuiEvent.Post event) {
-        if (event.gui instanceof GuiIngameMenu) {
-            int x = event.gui.width / 2 - 100;
-            int y = event.gui.height / 4 + 128;
-            event.buttonList.add(new GuiButton(100, x, y, "ServerList"));
+        if (event.getGui() instanceof GuiIngameMenu) {
+            int x = event.getGui().width / 2 - 100;
+            int y = event.getGui().height / 4 + 128;
+            event.getButtonList().add(new GuiButton(100, x, y, "ServerList"));
         }
     }
 
     @SubscribeEvent
     public void onGuiScreenActionPerformed(GuiScreenEvent.ActionPerformedEvent.Post event) {
-        if (event.gui instanceof GuiIngameMenu && event.button.id == 100) {
-            mc.displayGuiScreen(new GuiMultiplayer(event.gui));
+        if (event.getGui() instanceof GuiIngameMenu && event.getButton().id == 100) {
+            mc.displayGuiScreen(new GuiMultiplayer(event.getGui()));
         }
     }
 }
