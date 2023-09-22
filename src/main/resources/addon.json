@@ -1,0 +1,10 @@
+{
+  "uuid": "%uuid%",
+  "name": "ServerList InGame",
+  "mainClass": "de.vepexlegit.serverlistingame.ServerListInGameAddon",
+  "description": "Server List InGame | 1.8.9",
+  "version": 1,
+  "author": "vepexlegit",
+  "category": 1,
+  "icon": "https://i.ibb.co/231xpFz/image.png"
+}
