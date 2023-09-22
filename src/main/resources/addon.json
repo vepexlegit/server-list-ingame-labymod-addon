@@ -2,7 +2,7 @@
   "uuid": "%uuid%",
   "name": "ServerList InGame",
   "mainClass": "de.vepexlegit.serverlistingame.ServerListInGameAddon",
-  "description": "Server List InGame | 1.8.9",
+  "description": "Server List InGame | 1.12.2",
   "version": 1,
   "author": "vepexlegit",
   "category": 1,
